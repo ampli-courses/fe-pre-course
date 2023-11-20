@@ -15,14 +15,12 @@ const button = document.getElementById("generate-random-fact-button");
 
 button.addEventListener("click", () => {
   const randomFactIndex = Math.floor(Math.random() * octopusFacts.length);
-  console.log(`Fact#${randomFactIndex + 1}:`, octopusFacts[randomFactIndex]);
+  console.log(octopusFacts[randomFactIndex]);
 });
 
 const carouselImages = document.querySelector(".content-gallery-images");
 const prevButton = document.querySelector(".content-gallery-nav-prev");
 const nextButton = document.querySelector(".content-gallery-nav-next");
-
-console.log(carouselImages);
 
 const imageWidth = carouselImages.clientWidth;
 
